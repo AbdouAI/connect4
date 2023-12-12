@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Connect 4</title>
+
+</head>
+<body>
+    <main>
+        <div class="scores">
+            <div class="red-score currentTurn" id="redScoreCard">
+                <h2>Red</h2>
+                <span><span class="score" id="redScore">0</span> wins</span>
+            </div>
+            <div class="yellow-score" id="yellowScoreCard">
+                <h2>Yellow</h2>
+                <span><span class="score" id="yellowScore">0</span> wins</span>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="curtain display-none" id="curtain"><span id="matchResult"></span></div>
+            <div class="grid" id="grid">
+                <div class="col" data-colNum="1">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="col" data-colNum="2">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="col" data-colNum="3">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="col" data-colNum="4">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="col" data-colNum="5">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="col" data-colNum="6">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="col" data-colNum="7">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+            <div class="options-container">
+                <button id="restartBtn">Restart</button><div class="reset-div"><button id="resetBtn">Reset</button><span> or reload page</span></div>
+            </div>
+            
+        </div>
+        
+    </main>
+</body>
+<script src="connect4.js"></script>
+</html>
